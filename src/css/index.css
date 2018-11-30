@@ -63,11 +63,10 @@ main #projects {
     margin: 50px 30px 100px; }
     main #projects .albumns .details {
       display: flex;
-      justify-content: space-between; }
+      justify-content: center; }
       @media (max-width: 1660px) {
         main #projects .albumns .details {
-          flex-wrap: wrap;
-          justify-content: center; } }
+          flex-wrap: wrap; } }
       main #projects .albumns .details figure {
         border: 2px solid lightblue; }
       main #projects .albumns .details img {
