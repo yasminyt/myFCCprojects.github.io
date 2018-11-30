@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab");
+body {
+  text-align: center;
+  min-width: 300px;
+  font-family: 'Roboto Slab', serif;
+  margin: 0; }
+
+header {
+  position: fixed;
+  z-index: 10;
+  background: white;
+  width: 100%;
+  top: 0;
+  padding: 15px; }
+  header .logo {
+    width: 50%; }
+    header .logo img {
+      width: 350px;
+      float: left;
+      padding-left: 15px; }
+  header nav {
+    float: right;
+    width: 50%;
+    margin: 0; }
+    header nav ul {
+      width: 100%; }
+      header nav ul li {
+        display: inline; }
+        header nav ul li a {
+          text-decoration: none;
+          display: inline-block;
+          margin-right: 10%;
+          color: rgba(0, 0, 0, 0.9); }
+
+main {
+  position: relative;
+  top: 80px;
+  max-width: 1000px;
+  margin: 0 auto; }
+
+form h3 {
+  font-size: 25px; }
+
+form {
+  margin-bottom: 90px; }
+
+form input[type='email'] {
+  display: block;
+  margin: 0 auto;
+  min-width: 30%;
+  height: 25px;
+  padding: 5px;
+  font-size: 15px; }
+
+form input[type='submit'] {
+  margin-top: 20px;
+  padding: 8px 15px;
+  font-weight: 800;
+  background: orange;
+  border-radius: 10px; }
+
+section {
+  margin-top: 60px; }
+
+.features {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  margin: 40px; }
+
+.features div {
+  text-align: left; }
+
+.features img {
+  display: block;
+  min-width: 64px;
+  min-height: 64px;
+  padding: 0 60px; }
+
+.features h2 {
+  margin: 0;
+  padding: 0; }
+
+.features p {
+  padding: 0;
+  margin: 0; }
+
+iframe {
+  max-width: 560px;
+  width: 100%; }
+
+#pricing {
+  display: flex;
+  justify-content: space-between; }
+
+.card {
+  border: 1px solid black;
+  width: 300px; }
+
+.card h4 {
+  margin: 0;
+  padding: 12px 0;
+  background: lightgray; }
+
+.card strong {
+  display: block;
+  margin: 14px;
+  font-size: 20px; }
+
+.card p {
+  margin: 10px;
+  font-family: sans-serif; }
+
+.card button {
+  margin: 20px;
+  padding: 8px 15px;
+  background: orange;
+  font-size: 15px; }
+
+footer {
+  margin-top: 120px;
+  padding: 15px 20px;
+  background: lightgray;
+  text-align: right; }
+
+footer ul {
+  margin: 0 0 6px; }
+
+footer ul li {
+  display: inline; }
+
+footer ul li a {
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  margin-right: 15px; }
+
+footer p {
+  margin: 0;
+  opacity: 0.7;
+  font-size: 14px;
+  font-family: sans-serif; }
+
+@media (max-width: 950px) {
+  #pricing {
+    flex-direction: column;
+    align-items: center; }
+    #pricing .card {
+      margin-bottom: 20px; } }
+@media (max-width: 600px) {
+  .features img {
+    display: none; }
+  .features div {
+    text-align: center; } }
+@media (max-width: 800px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    header .logo {
+      width: 100%; }
+    header nav {
+      width: 100%; }
+
+  main {
+    top: 110px; } }
+
+/*# sourceMappingURL=productLanding.css.map */

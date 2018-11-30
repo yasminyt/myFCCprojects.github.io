@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Random Quote Machine</title>
+
+  <link rel="stylesheet" href="../src/css/randomQuote.css">
+  <link rel="stylesheet" href="http://at.alicdn.com/t/font_941460_e9h39fyfhgf.css">
+</head>
+
+<body>
+  <div id="quote-box">
+    <div class='content'>
+      <p id="text" class='text'>
+        <sup><i class='iconfont icon-zuocefenhao-copy'></i></sup>
+        <span></span>
+      </p>
+      <p id="author" class='author'></p>
+    </div>
+
+    <div class='operation'>
+      <a id="tweet-quote" href="https://twitter.com/intent/tweet" target="_blank">
+        <i class='iconfont icon-twitter'></i>
+      </a>
+      <a href="https://www.tumblr.com/" target="_blank">
+        <i class='iconfont icon-tumblr'></i>
+      </a>
+      <a href='#' id="new-quote">New quote</a>
+    </div>
+  </div>
+  <footer>
+    <p>by yasminyt</p>
+  </footer>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
+  <script src="../src/js/randomQuote.js"></script>
+</body>
+
+</html>

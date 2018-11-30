@@ -1,0 +1,4 @@
+#ignore scss directory
+scss/
+#忽略scss编译成css时生成的映射文件
+*.map

@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css?family=El+Messiri:400,500,600|Rochester");
+a {
+  color: white;
+  text-decoration: none;
+  background-color: #333;
+}
+a:hover {
+  opacity: 0.9;
+}
+
+p {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  text-align: center;
+  background-color: #333;
+  color: #333;
+}
+
+#quote-box {
+  width: 550px;
+  padding: 40px;
+  background-color: white;
+  border-radius: 5px;
+}
+#quote-box .content {
+  margin-bottom: 30px;
+}
+#quote-box .content .text {
+  font-family: 'El Messiri', sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  width: 90%;
+  margin: 0 auto;
+}
+#quote-box .content .text i {
+  margin-right: 20px;
+}
+#quote-box .content .author {
+  font-family: 'Rochester', cursive;
+  font-size: 20px;
+  text-align: right;
+  margin-top: 20px;
+}
+#quote-box .operation a {
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+  float: left;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+#quote-box .operation #new-quote {
+  width: 100px;
+  float: right;
+  margin-right: 0;
+}
+
+footer {
+  color: white;
+  font-size: 12px;
+  margin-top: 15px;
+}

@@ -1,0 +1,23 @@
+body {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  text-align: center;
+  color: #333; }
+
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto; }
+
+figcaption {
+  width: 95%;
+  margin: 10px auto;
+  line-height: 1.25; }
+
+ul {
+  width: 60%;
+  margin: 1% auto;
+  text-align: left;
+  line-height: 1.5; }
+
+/*# sourceMappingURL=tribute.css.map */
