@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:500|Rubik:300");
+body {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  background-color: #defcf9; }
+
+.calculator {
+  width: 400px;
+  border: 10px inset #b0b4e7;
+  text-align: right;
+  padding: 10px 20px;
+  background-color: #cadefc; }
+  .calculator .top {
+    width: 100%; }
+  .calculator .display {
+    font-size: 30px;
+    color: grey;
+    word-wrap: break-word;
+    word-break: break-all;
+    margin: 15px; }
+  .calculator .input {
+    height: 40px;
+    padding: 10px 20px;
+    font-size: 40px; }
+  .calculator .tab {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 55px);
+    grid-gap: 8px; }
+  .calculator #clear, .calculator #zero {
+    grid-column: 1 / 3; }
+  .calculator #clear, .calculator #equals {
+    background: #cca2e1; }
+  .calculator #equals {
+    grid-column: 4 / 5;
+    grid-row: 4 / 6; }
+  .calculator input[type=button] {
+    font-size: 20px;
+    font-family: 'Rubik', sans-serif;
+    background-color: #c3bef0;
+    cursor: pointer; }
+    .calculator input[type=button]:hover {
+      transform: scale(1.1);
+      font-size: 25px; }
+
+/*# sourceMappingURL=calculator.css.map */
