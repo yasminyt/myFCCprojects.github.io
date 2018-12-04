@@ -28,13 +28,11 @@ $(function () {
         result = false
       }
       if (!((prevData === '0') && (clickValue === '0'))) {          // 处理连续输入多个0开头的数的情况
-        if (!((/\.$/.test(prevData)) && (clickValue === '.'))) {    // 处理连续输入多个'.'的情况
+        if (!((/\./.test(prevData)) && (clickValue === '.'))) {    // 处理连续输入多个'.'的情况
           if ((prevData === '0') && /[1-9]/.test(clickValue))      // 处理输入了0开头之后输入的是非0的数字的情况
             values.pop()
           handleAbnormal(abnormal.ContinuousOperation, clickValue)
           values.push(clickValue)
-          console.log('values')
-          console.log(values)
           handleInput(clickValue)
         }
       }
@@ -44,8 +42,12 @@ $(function () {
 
 const handleInput = value => {
   if (/[\d.]/.test(value)) {
-    if (!prevData)
-      prevData = value
+    if (!prevData) {
+      if (value ==='.')
+        handleAbnormal(abnormal.AddZero, '.')
+      else
+        prevData = value
+    }
     else
       prevData += value
   } else {
@@ -74,10 +76,6 @@ const handleInput = value => {
 
   if (!err)
     display()
-  console.log('data')
-  console.log(data)
-  console.log('operation')
-  console.log(operation)
 }
 
 const calculateAndFormat = () => {
@@ -124,8 +122,14 @@ const prevCalculate = () => {
 const handleAbnormal = (cases, clickValue) => {
   switch(cases) {
     case abnormal.AddZero: 
-      prevData = 0
-      values = [prevData, ...values]
+      if (clickValue === '.') {
+        prevData = '0.'
+        values.pop()
+        values.push(prevData)
+      } else {
+        prevData = 0
+        values = [prevData, ...values]
+      }
       break
     case abnormal.IgnoreOperation:
       const ingore = values.splice(values.length - 2, 1)

@@ -12,7 +12,8 @@ const Projects = [
     title: 'Front End Libraries Projects',
     url: 'front-end-libraries',
     details: [
-      { img: 'random-quote.PNG', title: 'Random Quote Machine', href: 'random-quote.html'}
+      { img: 'random-quote.PNG', title: 'Random Quote Machine', href: 'random-quote.html'},
+      { img: 'calculator.PNG', title: 'JavaScript Calculator', href: 'calculator.html'}
     ]
   }
 ]
