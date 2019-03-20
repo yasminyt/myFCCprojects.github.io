@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>A Survey Form</title>
+
+  <link rel="stylesheet" href="../src/css/serveyForm.css">
+  <link rel="stylesheet" href="../src/css/style.css">
+</head>
+<body>
+  <header>
+    <h1 id="title">Survey Form</h1>
+  </header>
+  
+  <main>
+    <p id="description">Let us know how we can improve freeCodeCamp</p>
+    <form id="survey-form">
+      <label id="name-label" for='name'><sup>*</sup>Name: </label>
+      <input id='name' placeholder='Enter your name' required>
+      
+      <label id="email-label" for='email'><sup>*</sup>Email: </label>
+      <input id='email' type='email' placeholder='Enter your Email' required>
+      
+      <label id="number-label" for='number'><sup>*</sup>Age: </label>
+      <input id='number' type='number' placeholder='Age' min=0 max=90 required>
+      
+      <label for='dropdown'>Which option best describes your current role?</label>
+      <select id="dropdown">
+        <option disabled>Select an option</option>
+        <option>Student</option>
+        <option>Full Time Job</option>
+        <option>Full Time Learner</option>
+        <option>Prefer not to say</option>
+        <option>Other</option>
+      </select>
+      
+      <label><sup>*</sup>How likely is that you would recommend freeCodeCamp to a friend?</label>
+      <div class='radio'>
+        <label><input type='radio' name='radio' value=0>Definitely</label>
+        <label><input type='radio' name='radio' value=1>Maybe</label>
+        <label><input type='radio' name='radio' value=2>Not sure</label>
+      </div>
+      
+      <label for='dropdown2'>What do you like most in FCC: </label>
+      <select id='dropdown2'>
+        <option disabled selected>Select an option</option>
+        <option value='Challenges'>Challenges</option>
+        <option value='Project'>Project</option>
+        <option value='Community'>Community</option>
+        <option value='OpenSource'>Open Source</option>
+       </select>
+      
+       <label>Things that should be improved in the future<br>(Check all that apply):</label>
+      <div class='checkbox'>
+         <label><input name='checkbox' type='checkbox' value=0>Front-end Projects</label>
+         <label><input name='checkbox' type='checkbox' value=1>Back-end Projects</label>
+         <label><input name='checkbox' type='checkbox' value=2>Data Visualization</label>
+         <label><input name='checkbox' type='checkbox' value=3>Challenges</label>
+         <label><input name='checkbox' type='checkbox' value=4>Open Source Community</label>
+         <label><input name='checkbox' type='checkbox' value=5>Gitter help rooms</label>
+         <label><input name='checkbox' type='checkbox' value=6>Videos</label>
+         <label><input name='checkbox' type='checkbox' value=7>City Meetups</label>
+         <label><input name='checkbox' type='checkbox' value=8>Wiki</label>
+         <label><input name='checkbox' type='checkbox' value=9>Forum</label>
+         <label><input name='checkbox' type='checkbox' value=10>Additional Courses</label>
+      </div>
+      <label for='comment'>Any Comments or Suggestions?</label>
+      <textarea id='comment' placeholder='Enter your comment here...'></textarea>
+      
+      <button id="submit" type='submit'>Submit</button>
+    </form>
+  </main>
+</body>
+</html>
