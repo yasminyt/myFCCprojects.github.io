@@ -111,9 +111,9 @@ const calculate = () => {
 const prevCalculate = () => {
   if (tmp.length === 2) {
     if (tmp[1] === '÷')
-      data.push((tmp[0] / prevData))
+      data.push(+((tmp[0] / prevData).toFixed(8)))
     else
-      data.push((tmp[0] * prevData))
+      data.push(+((tmp[0] * prevData).toFixed(8)))
     tmp = []
   } else
     data.push(prevData)
